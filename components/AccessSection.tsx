@@ -135,7 +135,7 @@ export default function AccessSection() {
               </h3>
               <div className="rounded-xl overflow-hidden h-80 lg:h-[calc(100%-60px)]">
                 <iframe
-                  src="https://www.google.com/maps?q=てのひら整骨院+大阪府東大阪市若江東町4-2-8&output=embed&z=16"
+                  src="https://maps.google.com/maps?q=%E5%A4%A7%E9%98%AA%E5%BA%9C%E6%9D%B1%E5%A4%A7%E9%98%AA%E5%B8%82%E8%8B%A5%E6%B1%9F%E6%9D%B1%E7%94%BA4-2-8&t=&z=16&ie=UTF8&iwloc=&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}

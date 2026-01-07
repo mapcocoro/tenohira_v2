@@ -129,18 +129,6 @@ export default function HeroSection() {
                 />
               </div>
 
-              {/* フローティングカード */}
-              <div className="absolute -bottom-4 -right-4 bg-white rounded-xl shadow-soft p-4 hidden md:block">
-                <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center">
-                    <span className="text-2xl">📍</span>
-                  </div>
-                  <div>
-                    <p className="text-sm font-bold text-natural-800">コープ若江店の目の前</p>
-                    <p className="text-xs text-natural-500">若江岩田駅 徒歩12分</p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>

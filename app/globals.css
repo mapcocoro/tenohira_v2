@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'M PLUS Rounded 1c', 'Zen Maru Gothic', sans-serif;
+  color: #333;
+  background-color: #fff;
+  line-height: 1.8;
+}
+
+/* コンテナ */
+.container {
+  @apply max-w-6xl mx-auto px-4;
+}
+
+/* セクション */
+.section {
+  @apply py-16 md:py-20;
+}
+
+.section-title {
+  @apply text-2xl md:text-3xl font-bold text-natural-800 text-center mb-3;
+  font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+.section-subtitle {
+  @apply text-natural-500 text-center text-sm mb-10;
+}
+
+/* カード */
+.card {
+  @apply bg-white rounded-xl shadow-card p-6 transition-all duration-300;
+}
+
+.card:hover {
+  @apply shadow-hover;
+}
+
+/* ボタン */
+.btn {
+  @apply inline-flex items-center justify-center gap-2 font-medium py-3 px-6 rounded-lg transition-all duration-300;
+}
+
+.btn-primary {
+  @apply btn bg-primary-500 text-white hover:bg-primary-600;
+}
+
+.btn-outline {
+  @apply btn border-2 border-primary-500 text-primary-600 hover:bg-primary-50;
+}
+
+.btn-lg {
+  @apply py-4 px-8 text-lg;
+}
+
+/* テーブル */
+.schedule-table {
+  @apply w-full border-collapse;
+}
+
+.schedule-table th,
+.schedule-table td {
+  @apply py-3 px-2 text-center border-b border-natural-200;
+}
+
+.schedule-table thead th {
+  @apply bg-primary-50 text-primary-700 font-medium text-sm;
+}
+
+.schedule-table tbody td {
+  @apply text-natural-700;
+}
+
+/* アニメーション */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* ヒーローの波 */
+.hero-wave {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.hero-wave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 60px;
+}
+
+/* 電話番号リンク */
+.tel-link {
+  @apply text-2xl md:text-3xl font-bold text-primary-600 hover:text-primary-700 transition-colors;
+}

@@ -59,3 +59,4 @@ npm run build    # ビルド
 - 外部埋め込み（Google Maps等）は公式の方法のみ使用
 - フォーム等を追加する場合は入力値のサニタイズを徹底
 - `npm audit`で定期的に脆弱性チェック
+<!-- trigger deploy -->
